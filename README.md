@@ -9,10 +9,17 @@ Nese repositório documento todos os meus estudos, desafios e projetos para o Pr
 
 Inicialmente usando o Google Colaboratory devivo a baixa complexidade dos problemas.
 
+## Ementa
+- Python para Cientistas de Dados
+- Bancos de Dados SQL e NoSQL
+- Imersão Cloud Computer
+- Machine Learning
+
 ## Entregas
 ### Desafios de Códigos
 - <a href="https://github.com/berggama/bootcamp_unimed/blob/main/Desafios_Iniciais_Python.ipynb">Desafios iniciais com Python</a>
 </p>
+
 - <a href="https://github.com/berggama/bootcamp_unimed/blob/main/desafios_intermediarios_python.ipynb">Desafios Intermediários com Python</a>
 </p>
 
