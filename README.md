@@ -13,6 +13,8 @@ Inicialmente usando o Google Colaboratory devivo a baixa complexidade dos proble
 ### Desafios de Códigos
 - <a href="https://github.com/berggama/bootcamp_unimed/blob/main/Desafios_Iniciais_Python.ipynb">Desafios iniciais com Python</a>
 </p>
+- <a href="https://github.com/berggama/bootcamp_unimed/blob/main/desafios_intermediarios_python.ipynb">Desafios Intermediários com Python</a>
+</p>
 
 ### Desafios de Projeto
 - <a href="https://github.com/berggama/bootcamp_unimed/blob/main/An%C3%A1lise_Explorat%C3%B3ria_de_Dados_com_Python_e_Pandas_.ipynb">Análise de Dados com Python e Pandas</a>
