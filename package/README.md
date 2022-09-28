@@ -32,7 +32,7 @@ pip install desafios_dio
 
 ```python
 from desafios_dio.segundo_desafio import find_position
-file1_name.my_function()
+file1_name.find_position()
 ```
 
 ## Author
