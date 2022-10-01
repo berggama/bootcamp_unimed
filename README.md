@@ -30,3 +30,5 @@ Inicialmente usando o Google Colaboratory devivo a baixa complexidade dos proble
 - <a href="https://github.com/berggama/bootcamp_unimed/tree/main/package">Criação de pacotes em Python</a>
 </p>
 
+- <a href="https://github.com/berggama/bootcamp_unimed/blob/main/machine_learning_para_prever_evolu%C3%A7%C3%A3o_do_COVID_19_no_brasil.ipynb">Modelo com Python e Machine Learning para prever a evolução do COVID-19 no Brasil</a>
+</p>
