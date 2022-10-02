@@ -1,4 +1,4 @@
-# Esquema Conceitual para Banco De dados
+# Esquema Conceitual para Banco de Dados
 Projeto criado para o Desafio prático do Bootcamp de Ciência de Dados da UNIMED - BH. A ideia é realizar o Esquema Conceitual de uma oficina, 
 procurando detalhar o modelo, criando as principais entidades e suas relações.
 
