@@ -35,3 +35,6 @@ Inicialmente usando o Google Colaboratory devivo a baixa complexidade dos proble
 
 - <a href="https://github.com/berggama/bootcamp_unimed/blob/main/projeto_conceitual_de_banco_de_dados.md">Projeto Conceitual de Banco de Dados – E-COMMERCE</a>
 </p>
+
+- <a href="https://github.com/berggama/bootcamp_unimed/blob/main/esquema_conceitual.md">Esquema Conceitual para Banco de Dados - Oficina</a>
+</p>
