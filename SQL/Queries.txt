@@ -1,0 +1,33 @@
+-- Exercícios
+
+-- Exercício 1
+-- Encontre para mim todos os pedidos que estão com status de 'shipped', pode trazer todas as informações
+SELECT *
+FROM pedidos ped 
+WHERE id_pedidos IN (
+	SELECT id_pedidos
+	FROM entrega
+	WHERE status_entrega = 'shipped')
+
+-- Exercício 2
+-- Monte um relatório de todos os produtos cadastrados que tem preço de venda acima da média
+SELECT *
+FROM produtos p
+WHERE id_produto IN (
+	SELECT id_produto
+	FROM pedido ped
+	WHERE ped.valor > (
+		SELECT AVG(p.valor)
+		FROM produto p))
+
+-- Exercício 3
+-- Informações dos vendedores que venderam produtos da categoria 'cama_mesa_banho'
+SELECT *
+FROM vendedores_terceiro vt 
+WHERE id_vendedor IN (
+	SELECT id_vendedor
+	FROM pedido ped 
+	WHERE id_produto IN (
+		SELECT id_produto
+		FROM produto p 
+		WHERE categoria = 'cama_mesa_banho'))
