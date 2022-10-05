@@ -27,9 +27,6 @@ ter vendedores distintos (terceiros)
 - Um produto ou mais compoem o pedido
 - O pedido pode ser cancelado
 
-## Modelo Conceitual
-<p align="center"><img src="./Projeto Conceitual de Banco de Dados – E-COMMERCE.png" width="1000"></p>
-
 ## Projeto Lógico
 ```
 -- Projeto Lógico de Banco de Dados - Criação do Banco de Dados para o Cenário de E-commerce
