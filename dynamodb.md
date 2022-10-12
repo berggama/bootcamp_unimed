@@ -27,7 +27,65 @@ aws dynamodb create-table \
 ```
 
 ### Comando para popular tabela
-Populando a tabela com as informações contidas nos arquivos json
+Populando a tabela com as informações contidas nos arquivos itemart.json e batchart.json.
+- itemart.json (arquivo com informação de uma única obra de arte)
+```
+{
+  "Artist": {"S": "Alphonse Mucha"},
+  "Painting": {"S": "Zodiac"},
+  "ArtofStyle": {"S": "Art nouveau"},
+  "Year": {"S": "1896"}
+}
+```
+- batchart.json (arquivo com informação de várias obras de arte)
+```
+{
+    "Art": [
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "JOB"},
+                  "ArtOfStyle": {"S": "Art Nouveau"},
+                  "Year": {"S": "1894"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "Waverly Cycles"},
+                  "ArtOfStyle": {"S": "Art Nouveau"},
+                  "Year": {"S": "1897"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "Le Pater"},
+                  "ArtOfStyle": {"S": "Symbolism"},
+                  "Year": {"S": "1898"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "The Slavs in Their Original Homeland"},
+                  "ArtOfStyle": {"S": "Symbolism"},
+                  "Year": {"S": "1912"}
+                }
+            }
+        }
+      ]
+}
+```
+
+Ou seja, para o primeiro deles será necessário utilizar um comando que inserimos um item por vez na tabela:
 - Inserir um item
 
 ```
@@ -35,9 +93,8 @@ aws dynamodb put-item \
     --table-name Art \
     --item file://itempainting.json \
 ```
-
+Agora, inserindo o arquivo que possui vários itens de uma vez:
 - Inserir múltiplos itens
-
 ```
 aws dynamodb batch-write-item \
     --request-items file://batchpainting.json
