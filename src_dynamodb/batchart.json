@@ -1,0 +1,44 @@
+{
+    "Art": [
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "JOB"},
+                  "ArtOfStyle": {"S": "Art Nouveau"},
+                  "Year": {"S": "1894"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "Waverly Cycles"},
+                  "ArtOfStyle": {"S": "Art Nouveau"},
+                  "Year": {"S": "1897"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "Le Pater"},
+                  "ArtOfStyle": {"S": "Symbolism"},
+                  "Year": {"S": "1898"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Alphonse Mucha"},
+                  "Painting": {"S": "The Slavs in Their Original Homeland"},
+                  "ArtOfStyle": {"S": "Symbolism"},
+                  "Year": {"S": "1912"}
+                }
+            }
+        }
+      ]
+}

@@ -1,0 +1,6 @@
+{
+  "Artist": {"S": "Alphonse Mucha"},
+  "Painting": {"S": "Zodiac"},
+  "ArtofStyle": {"S": "Art nouveau"},
+  "Year": {"S": "1896"}
+}
