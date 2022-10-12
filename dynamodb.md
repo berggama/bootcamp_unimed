@@ -65,7 +65,7 @@ aws dynamodb update-table \
         \"ProvisionedThroughput\": {\"ReadCapacityUnits\": 10, \"WriteCapacityUnits\": 5      },\"Projection\":{\"ProjectionType\":\"ALL\"}}}]"
 ```
 Agora é possível executar uma consulta mais elaborada:
-- Pesquisa pelo index secundário baseado no nome do artista e no título do álbum
+- Pesquisa pelo index secundário baseado no nome do artista e do movimento artístico
 
 ```
 aws dynamodb query \
