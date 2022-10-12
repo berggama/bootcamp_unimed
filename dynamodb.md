@@ -52,3 +52,26 @@ aws dynamodb query \
     --key-condition-expression "Artist = :artist" \
     --expression-attribute-values  '{":artist":{"S":"Alphonse Mucha"}}'
 ```
+
+Para consultas "mais complexas", é necessário criar index secundários para que seja possível a "busca":
+- Criar um index global secundário baseado no movimento artistico
+
+```
+aws dynamodb update-table \
+    --table-name Art \
+    --attribute-definitions AttributeName=StyleOfArt ,AttributeType=S \
+    --global-secondary-index-updates \
+        "[{\"Create\":{\"IndexName\": \"StyleOfArt-index\",\"KeySchema\":[{\"AttributeName\":\"StyleOfArt\",\"KeyType\":\"HASH\"}], \
+        \"ProvisionedThroughput\": {\"ReadCapacityUnits\": 10, \"WriteCapacityUnits\": 5      },\"Projection\":{\"ProjectionType\":\"ALL\"}}}]"
+```
+Agora é possível executar uma consulta mais elaborada:
+- Pesquisa pelo index secundário baseado no nome do artista e no título do álbum
+
+```
+aws dynamodb query \
+    --table-name Art \
+    --index-name ArtistStyleOfArt-index \
+    --key-condition-expression "Artist = :v_artist and StyleOfArt = :v_style" \
+    --expression-attribute-values  '{":v_artist":{"S":"Alphonse Mucha"},":v_style":{"S":"Art Nouveau "} }'
+```
+
