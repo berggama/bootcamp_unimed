@@ -44,3 +44,6 @@ Inicialmente usando o Google Colaboratory devivo a baixa complexidade dos proble
 
 - <a href="https://github.com/berggama/bootcamp_unimed/blob/main/dynamodb.md">Boas práticas com DynamoDB</a>
 </p>
+
+- <a href="https://github.com/berggama/bootcamp_unimed/blob/main/amazon_athena.md">Explorando Dados Demográficos com Serviços de Big Data na AWS</a>
+</p>
