@@ -4,7 +4,7 @@
 Códigos criado para utilização junto a plataforma Digital Innovation One Inc para o Programa Geração Tech Unimed - Ciência de Dados
 
 ## Introdução
-Nese repositório documento todos os meus estudos, desafios e projetos para o Programa Geração Tech Unimed - Ciência de Dados, desde os desafios mais básicos, até projetos mais complexos.
+Nese repositório documento todos os meus estudos, desafios e projetos para o Programa Geração Tech Unimed - Ciência de Dados, desde os desafios mais básicos, até projetos mais complexos utilizando Machine Learning e Cloud Computing.
 <p align="center"><img src="./unimed.png" width="200"></p>
 
 Inicialmente usando o Google Colaboratory devivo a baixa complexidade dos problemas.
@@ -46,4 +46,7 @@ Inicialmente usando o Google Colaboratory devivo a baixa complexidade dos proble
 </p>
 
 - <a href="https://github.com/berggama/bootcamp_unimed/blob/main/amazon_athena.md">Explorando Dados Demográficos com Serviços de Big Data na AWS</a>
+</p>
+
+- <a href="https://github.com/berggama/bootcamp_unimed/blob/main/redes_neurais_com_transfer_learning.ipynb">Treinamento de Redes Neurais com Transfer Learning</a>
 </p>
